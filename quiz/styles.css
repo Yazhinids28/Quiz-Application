@@ -1,0 +1,86 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, rgba(0, 198, 255, 0.7), rgba(0, 114, 255, 0.7)), url('https://i.pinimg.com/originals/db/34/d4/db34d40b271fb59477621550bf73ea0b.jpg'); /* Gradient overlay with background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: black; /* Change text color to white for better contrast */
+    text-align: center; /* Center text for all elements */
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.section {
+    display: none;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+}
+
+.active {
+    display: block;
+}
+
+#options {
+    margin-top: 20px;
+}
+
+#options button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #8697eb; /* Vibrant button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+#options button:hover {
+    background-color: #9ca6db; /* Darker shade on hover */
+}
+
+#nextQuestion, #restartQuiz {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1e90ff; /* Bright blue for action buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+#nextQuestion:hover, #restartQuiz:hover {
+    background-color: #5dade2; /* Lighter shade on hover */
+}
+
+#nextQuestion:disabled {
+    background-color: grey; /* Disabled button style */
+}
+
+/* Styles for welcome section */
+#welcome {
+    background: rgba(255, 255, 255, 0.8); /* White background with transparency for better readability */
+    padding: 40px; /* More padding for the background */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#quiz, #results {
+    background: rgba(255, 255, 255, 0.8); /* White background with transparency for better readability */
+    padding: 40px; /* More padding for the background */
+    border-radius: 10px; /* Rounded corners */
+}
